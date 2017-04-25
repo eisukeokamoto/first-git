@@ -2,8 +2,16 @@
 <%= @tasks.id %>
  のタスク詳細ページ</h1>
 
-<p>
+<p>タイトル: 
+<%= @tasks.title %>
+</p>
+
+<p> タスク: 
 <%= @tasks.content %>
+</p>
+
+<p>ステータス: 
+<%= @tasks.status %>
 </p>
 
 <%= link_to '一覧に戻る', tasks_path %>

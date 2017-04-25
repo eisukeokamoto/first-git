@@ -2,14 +2,17 @@
   
 <ul>
   
-<% @tasks.each do |message| %>
+<% @tasks.each do |task| %>
 
     <li>
-<%= link_to message.id, message %>
-<%= message.title %>
+<%= link_to task.id, task %>
+ :
+<%= task.title %>
  > 
- : 
-<%= message.content %>
+<%= task.content %>
+ >
+<%= task.status %> 
+
 </li>
   
 <% end %>
